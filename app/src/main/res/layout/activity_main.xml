@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tipCalcTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_name"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/costTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Cost"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TipPercent"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/costTitle"
+        app:layout_constraintTop_toBottomOf="@+id/costTitle" />
+
+    <TextView
+        android:id="@+id/tipAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TipTotal"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tipPercent"
+        app:layout_constraintTop_toBottomOf="@+id/tipPercent" />
+
+    <TextView
+        android:id="@+id/totalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TotalCost"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tipAmountTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tipAmountTitle" />
+
+    <EditText
+        android:id="@+id/costEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/HintEnterCost"
+        android:inputType="numberDecimal"
+        android:textColorHint="#78909C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costTitle"
+        app:layout_constraintStart_toEndOf="@+id/costTitle"
+        app:layout_constraintTop_toTopOf="@+id/costTitle"
+        tools:ignore="Autofill" />
+
+    <SeekBar
+        android:id="@+id/tipSeekBar"
+        android:layout_width="225dp"
+        android:layout_height="20dp"
+        android:max="30"
+        android:min="0"
+        android:background="@drawable/customseekbar"
+        android:progressBackgroundTint="@color/black"
+        android:secondaryProgressTint="@color/ToolBar"
+        android:progressTint="@color/black"
+        android:thumbTint="@color/black"
+        android:thumb="@drawable/customthumb"
+        app:layout_constraintBottom_toBottomOf="@+id/tipPercent"
+        app:layout_constraintStart_toStartOf="@+id/costEditText"
+        app:layout_constraintTop_toTopOf="@+id/tipPercent" />
+
+    <TextView
+        android:id="@+id/tipTotal"
+        android:layout_width="202dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TipDefaultValue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/tipAmountTitle"
+        app:layout_constraintStart_toStartOf="@+id/tipSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/tipAmountTitle"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="202dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/TotalDefaultValue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/totalTitle"
+        app:layout_constraintStart_toStartOf="@+id/tipTotal"
+        app:layout_constraintTop_toTopOf="@+id/totalTitle"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/creatorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="monospace"
+        android:text="@string/MadeBy"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tipQuality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tipSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/tipSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/tipSeekBar"
+        tools:text="Average" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

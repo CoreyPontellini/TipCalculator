@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="Cost">Cost</string>
+    <string name="TipPercent">15%</string>
+    <string name="TipTotal">Tip</string>
+    <string name="TotalCost">Total</string>
+    <string name="TipDefaultValue">0.0</string>
+    <string name="TotalDefaultValue">0.0</string>
+    <string name="HintEnterCost">Enter Cost</string>
+    <string name="MadeBy">Made By Corey</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="PoorColor">#D61102</color>
+    <color name="Average">#F5AC10</color>
+    <color name="Good">#B8F500</color>
+    <color name="Great">#68DD2D</color>
+    <color name="Amazing">#11F521</color>
+    <color name="Background">#FCFEF6</color>
+    <color name="ToolBar">#FFD887</color>
+
+</resources>
